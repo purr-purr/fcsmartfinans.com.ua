@@ -1,41 +1,43 @@
 .container {
-	padding-top: 138px;
-	background: url('../../assets/blur.svg') no-repeat;
-	background-position-x: center;
-	background-position-y: top;
-	background-size: contain;
-	margin-bottom: 200px;
+	background: url('../../assets/intro-poster.png') no-repeat center/100%;
+	padding-block: 325px 435px;
+	margin-top: -80px;
+
+	@include media($laptop-bp) {
+		padding-block: 260px 300px;
+	}
 
 	@include media($mobile-bp) {
-		padding-top: 40px;
-		margin-bottom: 100px;
-		background-position-y: bottom;
+		padding-block: 200px 150px;
+		background-image: url('../../assets/intro-poster-mobile.png');
+		background-size: contain;
 	}
 }
 
 .info {
-	@include flex(center, center, 29px);
-
-	@include media($mobile-bp) {
-		flex-direction: column;
-		align-items: baseline;
-	}
+	max-width: 1027px;
+	width: 100%;
+	margin-inline: auto;
 
 	&Title {
+		margin-bottom: 60px;
 		font-size: 50px;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: var(--bold-text);
-		text-align: right;
 
 		@include media($mobile-bp) {
-			font-size: 32px;
-			text-align: left;
+			font-size: 30px;
+			margin-bottom: 30px;
 		}
 	}
 
 	&Desc {
-		max-width: 342px;
+		max-width: 417px;
+
+		@include media($mobile-bp, min) {
+			margin-left: auto;
+		}
 	}
 }
 
