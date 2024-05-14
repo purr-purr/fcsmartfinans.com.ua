@@ -1,8 +1,4 @@
-import Image from 'next/image';
-
 import s from './Intro.module.scss';
-
-import INTRO_IMAGE from '@modules/home/assets/intro-poster.jpg';
 
 const Intro = () => {
 	return (

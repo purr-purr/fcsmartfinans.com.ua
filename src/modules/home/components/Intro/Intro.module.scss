@@ -1,8 +1,11 @@
 .container {
-	background: url('../../assets/intro-poster.png') center no-repeat;
+	background: url('../../assets/intro-poster.png') no-repeat center/100%;
 	padding-block: 325px 435px;
-	background-size: 100%;
 	margin-top: -80px;
+
+	@include media($laptop-bp) {
+		padding-block: 260px 300px;
+	}
 
 	@include media($mobile-bp) {
 		padding-block: 200px 150px;
@@ -12,9 +15,9 @@
 }
 
 .info {
-	@include media($mobile-bp, min) {
-		padding-inline: 250px 160px;
-	}
+	max-width: 1027px;
+	width: 100%;
+	margin-inline: auto;
 
 	&Title {
 		margin-bottom: 60px;
@@ -31,7 +34,10 @@
 
 	&Desc {
 		max-width: 417px;
-		margin-left: auto;
+
+		@include media($mobile-bp, min) {
+			margin-left: auto;
+		}
 	}
 }
 
