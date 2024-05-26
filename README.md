@@ -1,8 +1,8 @@
-# -
+# fcsmartfinans.com.ua
 
 #### `JavaScript / ReactJS / TypeScript / NextJS`
 
-# [https://-/](https://-/)
+# [https://fcsmartfinans.com.ua/](https://fcsmartfinans.com.ua/)
 
 ## Getting Started
 
@@ -28,9 +28,7 @@ result.
 Also use:
 
 - Scss
-- ftp-deploy
-- MUI
--
+- GitHub CI/CD
 
 ## Authors
 
