@@ -1,4 +1,4 @@
-import {FC, type ReactNode, useRef} from 'react';
+import { FC, type ReactNode } from 'react';
 
 import Meta from '@modules/common/components/Meta';
 import Footer from '@modules/layout/components/Footer';

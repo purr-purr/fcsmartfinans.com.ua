@@ -1,3 +1,5 @@
+import { COMPANY_CATCHPHRASE } from '@utils/const';
+
 import s from './Intro.module.scss';
 
 const Intro = () => {
@@ -5,12 +7,9 @@ const Intro = () => {
 		<section className={s.container}>
 			<article className={s.info}>
 				<h1 className={s.infoTitle}>
-					Перетворіть ваші <br/>
-					фінансові цілі у реальність
+					Вигідні рішення <br /> для вашого зростання
 				</h1>
-				<p className={s.infoDesc}>
-					{`Місія ТОВ "СЕНТ ПРО" - забезпечити наших клієнтів доступом до різноманітних фінансових рішень, що відповідають їхнім потребам та сприяють їхньому успіху.`}
-				</p>
+				<p className={s.infoDesc}>{COMPANY_CATCHPHRASE}</p>
 			</article>
 		</section>
 	);
