@@ -8,7 +8,7 @@ export const rightsProtectionDocs: IDocumentsList[] = [
 	},
 	{
 		title: 'Порядок розгляду звернень споживачів фінансових послуг (розміщено)',
-		link: importDoc(''),
+		link: importDoc('doc_90933 (1).pdf'),
 	},
 	{
 		title:
